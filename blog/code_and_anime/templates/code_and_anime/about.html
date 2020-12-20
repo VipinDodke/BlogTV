@@ -1,0 +1,51 @@
+{% extends 'code_and_anime/basic.html' %}
+{%block title%}AboutPage{%endblock%}
+{%block css%}
+  .img-fluid
+  {
+    max-width: 45%;
+    height: auto;
+  }
+{%endblock%}
+{%block body%}
+{%load static%}
+<!--<img src="{%static 'blog/vipin1.jpg' %}" class="img-fluid" alt="Responsive image">-->
+  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 font-italic">Show and Design the world.</h1>
+      <p class="lead my-3">Thinking allows humans to make sense of, interpret, represent or model the world they experience, and to make predictions about that world.</p>
+      <p class="lead mb-0"><a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" class="text-white font-weight-bold">Continue reading...</a></p>
+    </div>
+  </div>
+<div class="container ">
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Managing Director.</strong>
+          <h3 class="mb-0">Vipin Dodke</h3>
+          <div class="mb-1 text-muted">Nov 12, 2020</div>
+          <p class="card-text mb-auto">Think that every day is promised to you. A promise to live your dream! No one knows what that dream you have.</p>
+        </div>
+       <!-- <div class="col-auto d-none d-lg-block mx-5">
+        <img src="https://source.unsplash.com/600x500/?Electronic,Coding"  class="img-fluid" alt="">
+        </div>-->
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Operational Director</strong>
+          <h3 class="mb-0">Tanuj Rawat</h3>
+          <div class="mb-1 text-muted">Nov 12, 2020</div>
+          <p class="mb-auto">Observation and interest are essential for success in the spiritual venture.</p>
+        </div>
+       <!-- <div class="col-auto d-none d-lg-block mx-5">
+        <img src="https://source.unsplash.com/600x500/?Electronic,Coding"  class="img-fluid" alt="">
+        </div>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+{%endblock%}

@@ -1,0 +1,54 @@
+{% extends 'code_and_anime/basic.html' %}
+{%block title%}ContactPage{%endblock%}
+{%block css%}
+.container, .container-lg, .container-md, .container-sm, .container-xl
+{
+    max-width: 500px;
+}
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0d3d6d;
+    text-align: left;
+    background-color: #fff;
+}
+{%endblock%}
+
+{%block body%}
+  <div class="container shadow my-3">
+    <h2>Contact Us</h2>
+    <form action="/code_and_anime/contact/" method="post">{% csrf_token %}
+    	<div class="container col-md-6 mb-3 my-2">
+          <label for="name">Full Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Jone Wikee" required>
+        </div>
+      <div class="container conform-group ">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+      </div>
+      <div class="container form-group my-4 ">
+        <label for="call">Phone</label>
+        <input type="tel" class="form-control" id="call" name="call" placeholder="Phone number" required>
+        </div>
+        <div class="container form-group">
+        <div class="form-group mx-5 ">
+        <label for="desc">You'r Feedback</label>
+        <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+      <div class="container mx-3" >
+      <h6>Tanuj Rawat (Blogger): +91 7554946955,  <a href = "mailto:trawat890@gmail.com?subject = Feedback&body = Message">
+Send mail
+</a> </h6>
+            <h6>Vipin Dodke (Website_Developer): +91 7746832666, <a href = "mailto:vipin830525@gmail.com?subject = Feedback&body = Message">
+Send mail
+</a> </h6></div>
+</div>
+
+{%endblock%}
+

@@ -1,0 +1,20 @@
+{% extends 'code_and_anime/basic.html' %}
+{%block title%}BlogView{%endblock%}
+{%block css%}
+
+{%endblock%}
+{%block body%}
+<div class="container my-4">
+
+                <img src="/media/{{pageid.image}}" width="600px" >
+
+        <div class="col-md-8">
+            <br>
+            <h2>{{pageid.blog_name}}</h2><br><br>
+            <p>{{pageid.desc}}</p>
+
+        </div>
+</div>
+
+{%endblock%}
+
